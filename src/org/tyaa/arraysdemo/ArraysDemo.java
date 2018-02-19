@@ -40,10 +40,49 @@ public class ArraysDemo {
         }*/
         
         int[][] t = new int[10][10];
-        for (int i = 1; i < 10; i++) {
-            for (int j = 1; j < 10; j++) {
-                t[i][j] = i * j;
+        
+        t[0][0] = 1;
+        t[1][0] = 1000;
+        
+        /*System.out.println(t[0][0]);
+        System.out.println(t[1][0]);
+        System.out.println(t[0][1]);*/
+        
+        /*for (int i = 0; i < 10; i++) {
+            System.out.printf("n = %d; value = %s\n", i, t[i]);
+        }*/
+        
+        /*for (int i = 0; i < 10; i++) {
+            System.out.printf("n = %d; value = %s\n", i, t[i][0]);
+        }*/
+        
+        /*for (int i = 0; i < 10; i++) {
+            //System.out.printf("n = %d; value = %s\n", i, t[i][0]);
+            //i = 0
+            for (int j = 0; j < 10; j++) {
+                //System.out.printf("i = %d; j = %d; value = %d\t\t", i, j, t[i][j]);
+                System.out.printf("%5d", t[i][j]);
             }
+            System.out.println();
+        }*/
+        
+        for (int i = 1; i <= 10; i++) {
+            
+            for (int j = 1; j <= 10; j++) {
+                
+                t[i-1][j-1] = i * j;
+                //System.out.print(i + " " + j+ "  ");
+                //System.out.printf("%5d", t[i-1][j-1]);
+            }
+        }
+        
+        for (int i = 1; i <= 10; i++) {
+            
+            for (int j = 1; j <= 10; j++) {
+                
+                System.out.printf("%5d", t[i-1][j-1]);
+            }
+            System.out.println();
         }
     }
     
