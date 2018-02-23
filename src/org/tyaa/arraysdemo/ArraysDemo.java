@@ -14,7 +14,7 @@ public class ArraysDemo {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+     public static void main(String[] args) {
         
         int x = 10;
         
@@ -39,10 +39,9 @@ public class ArraysDemo {
             System.out.println(arr1[i]);
         }*/
         
-        int[][] t = new int[10][10];
+        int[][] t = new int[11][11];
         
-        t[0][0] = 1;
-        t[1][0] = 1000;
+        
         
         /*System.out.println(t[0][0]);
         System.out.println(t[1][0]);
@@ -67,18 +66,25 @@ public class ArraysDemo {
         }*/
         
         for (int i = 1; i <= 10; i++) {
-            
+            t[i][0]= i;
+            t[0][i]=i;
             for (int j = 1; j <= 10; j++) {
                 
-                t[i-1][j-1] = i * j;
+                 t[i][j]= i * j;
                 //System.out.print(i + " " + j+ "  ");
                 //System.out.printf("%5d", t[i-1][j-1]);
             }
         }
-        
-        for (int i = 1; i <= 10; i++) {
+        for (int i =1; i == 10; i++)
+        {t[0][1] = 1;
+        t [ 1 ][ 0 ] = 1;
+      
+        }
+        for (int i = 1; i <= 11; i++ ){
+        }  
+        for (int i = 1; i <= 11; i++) {
             
-            for (int j = 1; j <= 10; j++) {
+            for (int j = 1; j <= 11; j++) {
                 
                 System.out.printf("%5d", t[i-1][j-1]);
             }
